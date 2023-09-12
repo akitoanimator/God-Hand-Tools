@@ -1,0 +1,7 @@
+C:\Users\matheus\source\repos\DaTool\bin\Release\DaTool.exe.config
+C:\Users\matheus\source\repos\DaTool\bin\Release\DaTool.exe
+C:\Users\matheus\source\repos\DaTool\bin\Release\DaTool.pdb
+C:\Users\matheus\source\repos\DaTool\obj\Release\DaTool.csproj.AssemblyReference.cache
+C:\Users\matheus\source\repos\DaTool\obj\Release\DaTool.csproj.CoreCompileInputs.cache
+C:\Users\matheus\source\repos\DaTool\obj\Release\DaTool.exe
+C:\Users\matheus\source\repos\DaTool\obj\Release\DaTool.pdb
