@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
-namespace SCRTool
+public static class Program
 {
-    class Program
+    public static void Main(string[] args)
     {
-        static void Main()
+        if (args.Length > 0)
         {
-            Console.WriteLine("input 'e' to extract a model.");
-            Console.WriteLine("input 'c' to convert a model.");
-            Console.WriteLine("input 'm' to open the model viewer.");
-            string ans = Console.ReadLine();
-            if (!ans.Contains("e") && !ans.Contains("c") && !ans.Contains("m"))
-                Main();
-            else
-                Answer.analyseAnswer(ans);
+            string draggedFile = args[0];
+            if (File.Exists(draggedFile))
+            {
+                ExtractModel.skipGUI(draggedFile) ;
+            }
         }
+        Console.WriteLine("input '1' to extract a model.");
+        Console.WriteLine("input '2' to convert a model. (WIP)");
+        //Console.WriteLine("input '3' to open the model viewer.");
+        string ans = Console.ReadLine();
+        if (!ans.Contains("1") && !ans.Contains("2") && !ans.Contains("3"))
+            Main(new string[] { "" });
+        else
+            Answer.analyseAnswer(ans);
     }
 }

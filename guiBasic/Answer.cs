@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SCRTool
+class Answer
 {
-    class Answer
+    public static void analyseAnswer(string ans)
     {
-        public static void analyseAnswer(string ans)
-        {
-            if (ans.Contains("e")) ExtractModel.GUI();
-            if (ans.Contains("c")) ConvertModel.GUI();
-        }
+        if (ans.Contains("1")) ExtractModel.GUI();
+        if (ans.Contains("2")) ConvertModel.GUI();
     }
 }
